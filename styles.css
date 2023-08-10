@@ -7,14 +7,11 @@
 
 body {
     height: 100vh;
-    background-color: #0E2954;
+    background-color: #0a192f;
     background-size: cover;
     background-position: center;
 }
 
-li{
-    list-style: none;
-}
 
 a{
     float: left;
@@ -23,18 +20,62 @@ a{
     font-size: 1rem;
 }
 
-li:hover{
-    color:#C3EDC0;
-    transition: all ease-in 200ms;
-    transform: translateX(20px);
+
+
+/* Apply the Animation to li Elements */
+@keyframes slideAnimation {
+    from {
+        transform: translatey(0px); /*start index 0*/
+    }
+    to {
+        transform: translatey(5px); /*end 5 pixels away*/
+    }
+    
 }
 
-.about:hover, .hobby:hover, .project:hover{
-    color:#72FFFF;
+
+.h--li {
+    list-style: none;
+    position: relative; /* Add position: relative */
+    transition: color 0.3s ease-in-out; /* Add a transition for color change */
+}
+
+.h--li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust the position of the underline */
+    right: 0;
+    width: 80%;
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: #fdfd96; /* Initial underline color */
+    transform-origin: center;
+    transform: scaleX(0); /* Start with no underline width */
+    transition: transform 0.3s ease-in-out; /* Add a transition for the underline animation */
+    
+}
+
+.h--li:hover {
+    color: #fdfd96;
+    animation: slideAnimation 700ms ease-in-out infinite alternate; /* Apply the animation */
+
+    
+}
+
+.h--li:hover::after {
+    transform: scaleX(1); /* Expand the underline width on hover */
+    background-color: #fdfd96; /* Change the underline color on hover */
+}
+
+.about:hover, .hobby:hover, .project:hover {
+    color: #fdfd96;
 }
 
 
-/*HEADER*/
+
+
+
+
+/*HEADER and Navbar*/
 header{
     position: relative;
     padding: 0 2rem;
@@ -57,11 +98,11 @@ i{
 }
 
 .dLogo {
-    width: 120px;
-    height: auto;
-    margin: auto;
+    width: 7em;
+    /* height: auto; */
+    margin-top: .5rem;
+    margin-left: -2rem;
     float: left;
-
 }
 
 .navbar a{
@@ -95,6 +136,7 @@ i{
 }
 
 .action_btn:hover{
+    transition-duration: 700ms;
     scale: 1.05;
     color: #fff;
 }
@@ -136,6 +178,26 @@ i{
     justify-content: center;
 }
 
+/* About Div Content */
+#content {
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10vh auto auto;
+    padding: 10rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: lightslategray;
+}
+
+#content p {
+    
+    margin-bottom: 1rem;
+}
+
+
+
 /*Hero*/
 section#hero {
     height: calc(100vh - 60px);
@@ -174,5 +236,39 @@ section#hero {
     .dropdown_menu {
         left: 2rem;
         width:unset;
+    }
+}
+
+/* Media Queries for Responsive Text */
+@media (min-width: 319px) and (max-width: 767px) {
+    #content {
+        margin-top: 0;
+        padding: 5rem; /* Adjust padding for smaller screens */
+    }
+
+    #content p {
+        font-size: 7vw; /* Adjust paragraph font size for smaller screens */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    #content { 
+        margin-top: 10vh auto auto;
+        padding: 8rem; /* Adjust padding for medium-sized screens */
+    }
+
+    #content p {
+        font-size: 1.8vw; /* Adjust paragraph font size for medium-sized screens */
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 2561px) {
+    #content { 
+        margin-top: 10vh auto auto;
+        padding: 6rem; /* Adjust padding for larger screens */
+    }
+
+    #content p {
+        font-size: 1.4vw; /* Adjust paragraph font size for larger screens */
     }
 }
