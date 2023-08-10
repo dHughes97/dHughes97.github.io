@@ -1,6 +1,6 @@
-                                                              # Delton Hughes Portfolio #
+# Delton Hughes Portfolio #
 
-                                                          ## Source Code for my Portfolio ##
+## Source Code for my Portfolio ##
 
 
 ###Hi! Glad you are here!!###
