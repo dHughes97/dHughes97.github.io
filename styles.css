@@ -158,6 +158,7 @@ i{
     border-radius: 10px;
     overflow: hidden;
     transform: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 0;
 }
 
 .dropdown_menu.open{
@@ -180,21 +181,34 @@ i{
 
 /* About Div Content */
 #content {
-    
+    position: relative;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 10vh auto auto;
     padding: 10rem;
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 600;
     color: lightslategray;
+    z-index: -1;
 }
 
 #content p {
-    
-    margin-bottom: 1rem;
+    position: inherit;
+    margin-bottom: 2rem;
 }
+
+.a__b{
+    color: #9DB2BF; 
+}
+
+.a__b:hover{
+    color: bisque;
+    cursor:default;
+    transition: linear 400ms;
+}
+
+
 
 
 
@@ -210,7 +224,6 @@ section#hero {
 }
 
 #hero h1{
-    /* font-family: 'Sacramento', cursive; */
     font-family: 'Playfair Display', serif;
     font-size: 4.5rem;
     margin-bottom: 1rem;
@@ -218,6 +231,11 @@ section#hero {
 
 /*Responsive Design with media query*/
 @media(max-width: 992px){
+    #hero h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 4.5rem;
+        margin-bottom: 1rem;
+    }
     .navbar .links,
     .navbar .action_btn{
         display: none;
@@ -233,6 +251,11 @@ section#hero {
 }
 
 @media(max-width: 576px){
+    #hero h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 4.5rem;
+        margin-bottom: 1rem;
+    }
     .dropdown_menu {
         left: 2rem;
         width:unset;
@@ -241,6 +264,11 @@ section#hero {
 
 /* Media Queries for Responsive Text */
 @media (min-width: 319px) and (max-width: 767px) {
+    #hero h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 4.5rem;
+        margin-bottom: 1rem;
+    }
     #content {
         margin-top: 0;
         padding: 5rem; /* Adjust padding for smaller screens */
@@ -252,6 +280,11 @@ section#hero {
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {
+    #hero h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 4.5rem;
+        margin-bottom: 1rem;
+    }
     #content { 
         margin-top: 10vh auto auto;
         padding: 8rem; /* Adjust padding for medium-sized screens */

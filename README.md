@@ -21,6 +21,9 @@ Navy  | #0a192f
 Pastel Yellow Green  | #fdfd96
 Orange| #FFA500
 lightslategray | #778899
+light gray blue | #9DB2BF 
+bisque | #ffe4c4
+
 
 
 #### Get in Touch ####
