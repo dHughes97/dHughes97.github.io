@@ -22,17 +22,6 @@ a{
 
 
 
-/* Apply the Animation to li Elements */
-@keyframes slideAnimation {
-    from {
-        transform: translatey(0px); /*start index 0*/
-    }
-    to {
-        transform: translatey(5px); /*end 5 pixels away*/
-    }
-    
-}
-
 
 .h--li {
     list-style: none;
@@ -57,8 +46,6 @@ a{
 .h--li:hover {
     color: #fdfd96;
     animation: slideAnimation 700ms ease-in-out infinite alternate; /* Apply the animation */
-
-    
 }
 
 .h--li:hover::after {
@@ -73,6 +60,14 @@ a{
 
 
 
+/*Dlogo and its animations/effects*/
+.dLogo {
+    width: 7em;
+    margin-top: .5rem;
+    margin-left: -2rem;
+    float: left;
+    animation: rotateAnimation 700ms ease-in alternate-reverse;
+}
 
 
 /*HEADER and Navbar*/
@@ -95,14 +90,6 @@ i{
    padding: 20px;
    width: 10px;
    height: 10px;
-}
-
-.dLogo {
-    width: 7em;
-    /* height: auto; */
-    margin-top: .5rem;
-    margin-left: -2rem;
-    float: left;
 }
 
 .navbar a{
@@ -231,11 +218,6 @@ section#hero {
 
 /*Responsive Design with media query*/
 @media(max-width: 992px){
-    #hero h1{
-        font-family: 'Playfair Display', serif;
-        font-size: 4.5rem;
-        margin-bottom: 1rem;
-    }
     .navbar .links,
     .navbar .action_btn{
         display: none;
@@ -251,11 +233,6 @@ section#hero {
 }
 
 @media(max-width: 576px){
-    #hero h1{
-        font-family: 'Playfair Display', serif;
-        font-size: 4.5rem;
-        margin-bottom: 1rem;
-    }
     .dropdown_menu {
         left: 2rem;
         width:unset;
@@ -264,11 +241,6 @@ section#hero {
 
 /* Media Queries for Responsive Text */
 @media (min-width: 319px) and (max-width: 767px) {
-    #hero h1{
-        font-family: 'Playfair Display', serif;
-        font-size: 4.5rem;
-        margin-bottom: 1rem;
-    }
     #content {
         margin-top: 0;
         padding: 5rem; /* Adjust padding for smaller screens */
@@ -280,11 +252,6 @@ section#hero {
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {
-    #hero h1{
-        font-family: 'Playfair Display', serif;
-        font-size: 4.5rem;
-        margin-bottom: 1rem;
-    }
     #content { 
         margin-top: 10vh auto auto;
         padding: 8rem; /* Adjust padding for medium-sized screens */
@@ -303,5 +270,27 @@ section#hero {
 
     #content p {
         font-size: 1.4vw; /* Adjust paragraph font size for larger screens */
+    }
+}
+
+
+/* Apply the Animation to li Elements */
+@keyframes slideAnimation {
+    from {
+        transform: translatey(0px); /*start index 0*/
+    }
+    to {
+        transform: translatey(5px); /*end 5 pixels away*/
+    }
+    
+}
+
+/*Keyframe for Dlogo*/
+@keyframes rotateAnimation {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
     }
 }
