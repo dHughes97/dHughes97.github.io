@@ -24,7 +24,7 @@ a{
 
 /*Dlogo and its animations/effects*/
 .dLogo {
-    width: 7em;
+    width: 6em;
     margin-top: .5rem;
     margin-left: -2rem;
     float: left;
@@ -200,13 +200,14 @@ i{
 
 /* About Div Content */
 #content {
+    max-width: 1440px;
     position: relative;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: auto auto auto;
+    margin: auto;
     top: 15vh;
-    padding: 6rem 0 10rem 0;
+    padding: 6rem 2rem 10rem;
     font-size: 1.3rem;
     font-weight: 600;
     color: lightslategray;
@@ -215,17 +216,13 @@ i{
 #content p {
     position: inherit;
     margin-bottom: 2rem;
+    font-size: clamp(1rem, 1.4vw, 1.4rem);
 }
 
 .a__b{
-    color: #9DB2BF; 
+    color: lightgrey; 
 }
 
-.a__b:hover{
-    color: bisque;
-    cursor:default;
-    transition: linear 400ms;
-}
 
 
 
@@ -247,6 +244,7 @@ section#hero {
     font-size: 4.5rem;
     margin-bottom: 1rem;
     font-weight: 400;
+    font-style: italic;
 }
 
 
@@ -302,47 +300,14 @@ to notice*/
 }
 
 /* Media Queries for Responsive Text */
-@media (min-width: 319px) and (max-width: 767px) {
+@media (min-width: 319px) {
     #page_subt{
         font-size: 1.4rem;
     }
-    #content {
-        top: 0;
-        padding: 5rem; /* Adjust padding for smaller screens */
-    }
-
-    #content p {
-        font-size: 7vw; /* Adjust paragraph font size for smaller screens */
-    }
+ 
 }
 
-@media (min-width: 769px) and (max-width: 1440px) {
-    #content { 
-        top: 0;
-        padding: 8rem; /* Adjust padding for medium-sized screens */
-    }
 
-    #content p {
-        font-size: 1.4rem;
-        padding: 1.2rem 6rem;
-    }
-}
-
-@media (min-width: 1441px) and (max-width: 2561px) {
-
-    
-    #content { 
-        margin-top: 10vh auto auto;
-        top: 0;
-        padding: 6rem; /* Adjust padding for larger screens */
-    }
-
-    
-    #content p {
-        font-size: 1.2vw;
-        padding: 0 6rem;
-    }
-}
 
 
 /* Apply the Animation to li Elements */
