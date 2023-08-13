@@ -1,3 +1,4 @@
+/*Default css for pages */
 * { 
     margin: 0;
     padding: 0;
@@ -13,20 +14,13 @@ body {
 }
 
 
+/*HEADER and Navbar*/
 a{
     float: left;
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
 }
-
-
-
-
-
-
-
-
 
 /*Dlogo and its animations/effects*/
 .dLogo {
@@ -37,7 +31,7 @@ a{
     animation: rotateAnimation 700ms ease-in alternate-reverse;
 }
 
-/*HEADER and Navbar*/
+
 header{
     position: relative;
     padding: 0 2rem;
@@ -262,7 +256,9 @@ section#hero {
     
 }
 
-
+/*planning on adding styles to these icons 
+to make it look more simple but icons large enough
+to notice*/
 .icon_style.fa-linkedin,
 .icon_style.fa-slack,
 .icon_style.fa-envelope,
