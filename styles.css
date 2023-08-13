@@ -23,39 +23,7 @@ a{
 
 
 
-.h--li {
-    list-style: none;
-    position: relative; /* Add position: relative */
-    transition: color 0.3s ease-in-out; /* Add a transition for color change */
-}
 
-.h--li::after {
-    content: "";
-    position: absolute;
-    bottom: -5px; /* Adjust the position of the underline */
-    right: 0;
-    width: 80%;
-    height: 2px; /* Adjust the thickness of the underline */
-    background-color: #fdfd96; /* Initial underline color */
-    transform-origin: center;
-    transform: scaleX(0); /* Start with no underline width */
-    transition: transform 0.3s ease-in-out; /* Add a transition for the underline animation */
-    
-}
-
-.h--li:hover {
-    color: #fdfd96;
-    animation: slideAnimation 700ms ease-in-out infinite alternate; /* Apply the animation */
-}
-
-.h--li:hover::after {
-    transform: scaleX(1); /* Expand the underline width on hover */
-    background-color: #fdfd96; /* Change the underline color on hover */
-}
-
-.about:hover, .hobby:hover, .project:hover {
-    color: #fdfd96;
-}
 
 
 
@@ -68,7 +36,6 @@ a{
     float: left;
     animation: rotateAnimation 700ms ease-in alternate-reverse;
 }
-
 
 /*HEADER and Navbar*/
 header{
@@ -102,6 +69,41 @@ i{
     gap: 2rem;
 }
 
+.h--li {
+    list-style: none;
+    position: relative; /* Add position: relative */
+    cursor: pointer;
+    transition: color 0.3s ease-in-out; /* Add a transition for color change */
+}
+
+.h--li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust the position of the underline */
+    right: 0;
+    width: 80%;
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: #fdfd96; /* Initial underline color */
+    transform-origin: center;
+    transform: scaleX(0); /* Start with no underline width */
+    transition: transform 0.3s ease-in-out; /* Add a transition for the underline animation */
+    
+}
+
+.h--li:hover {
+    color: #fdfd96;
+    animation: slideAnimation 700ms ease-in-out infinite alternate; /* Apply the animation */
+}
+
+.h--li:hover::after {
+    transform: scaleX(1); /* Expand the underline width on hover */
+    background-color: #fdfd96; /* Change the underline color on hover */
+}
+
+.about:hover, .hobby:hover, .project:hover {
+    color: #fdfd96;
+}
+
 .navbar .toggle_btn{
     color: #fff;
     font-size: 1.5rem;
@@ -109,6 +111,7 @@ i{
     display: none;
 }
 
+/*Action Button CSS*/
 .action_btn{
     background-color: orange;
     color: #fff;
@@ -131,6 +134,9 @@ i{
 .action_btn:active{
     scale: 0.95;
 }
+
+
+
 
 /*Dropdown Menu*/
 .dropdown_menu{
@@ -166,6 +172,38 @@ i{
     justify-content: center;
 }
 
+
+/*Subtitle for page*/
+.page_subt{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: .2rem;
+    padding: 3rem 0 1rem 0;
+    bottom:2vh;
+    margin-bottom: 3.5rem;
+    font-size: 1.7rem;
+    font-weight: 1000;
+    color:white;
+}
+
+.page_subt::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + .5rem);
+    height: 5px;
+    width: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    background-color: orange;
+}
+
+
+
+
+
 /* About Div Content */
 #content {
     position: relative;
@@ -174,7 +212,7 @@ i{
     text-align: center;
     margin: auto auto auto;
     top: 15vh;
-    padding: 10rem;
+    padding: 6rem 0 10rem 0;
     font-size: 1.3rem;
     font-weight: 600;
     color: lightslategray;
@@ -214,7 +252,35 @@ section#hero {
     font-family: 'Playfair Display', serif;
     font-size: 4.5rem;
     margin-bottom: 1rem;
+
 }
+
+
+/*WE LEFT OFF HERE!!!!!!!*/
+.vert_li{
+    padding-bottom: .5rem;
+    
+}
+
+
+.icon_style.fa-linkedin,
+.icon_style.fa-slack,
+.icon_style.fa-envelope,
+.icon_style.fa-phone {
+    
+}   
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Responsive Design with media query*/
 @media(max-width: 992px){
@@ -241,6 +307,9 @@ section#hero {
 
 /* Media Queries for Responsive Text */
 @media (min-width: 319px) and (max-width: 767px) {
+    #page_subt{
+        font-size: 1.4rem;
+    }
     #content {
         top: 0;
         padding: 5rem; /* Adjust padding for smaller screens */
@@ -258,7 +327,8 @@ section#hero {
     }
 
     #content p {
-        font-size: 1.8vw; /* Adjust paragraph font size for medium-sized screens */
+        font-size: 1.4rem;
+        padding: 1.2rem 6rem;
     }
 }
 
@@ -271,8 +341,10 @@ section#hero {
         padding: 6rem; /* Adjust padding for larger screens */
     }
 
+    
     #content p {
-        font-size: 1.4vw; /* Adjust paragraph font size for larger screens */
+        font-size: 1.2vw;
+        padding: 0 6rem;
     }
 }
 
