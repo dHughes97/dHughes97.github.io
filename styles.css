@@ -246,14 +246,14 @@ section#hero {
     font-family: 'Playfair Display', serif;
     font-size: 4.5rem;
     margin-bottom: 1rem;
-
+    font-weight: 400;
 }
 
 
 /*WE LEFT OFF HERE!!!!!!!*/
 .vert_li{
     padding-bottom: .5rem;
-    
+    right: 1%;
 }
 
 /*planning on adding styles to these icons 
