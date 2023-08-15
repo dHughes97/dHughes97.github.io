@@ -200,6 +200,7 @@ i{
 
 /* About Div Content */
 #content {
+    box-sizing: border-box;
     max-width: 1440px;
     position: relative;
     align-items: center;
@@ -211,6 +212,8 @@ i{
     font-size: 1.3rem;
     font-weight: 600;
     color: lightslategray;
+    display: flex; /* Add display flex */
+    flex-direction: column; /* Set flex direction to column */
 }
 
 #content p {
@@ -245,15 +248,31 @@ section#hero {
     margin-bottom: 1rem;
     font-weight: 400;
     font-style: italic;
+    pointer-events: none;
+    opacity: 0;
+    animation: fadeObject 1s ease-in 1s forwards;
 }
+
+#hero h2{
+    pointer-events: none;
+    opacity: 0;
+    animation: slideInandFade 2s ease-in 3s forwards ;
+}
+
 
 
 /*WE LEFT OFF HERE!!!!!!!*/
-.vert_li{
-    padding-bottom: .5rem;
-    right: 1%;
-}
+.content__style {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    height: 100%;
 
+}
 /*planning on adding styles to these icons 
 to make it look more simple but icons large enough
 to notice*/
@@ -328,5 +347,25 @@ to notice*/
     }
     to {
         rotate: 360deg;
+    }
+}
+
+@keyframes fadeObject {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slideInandFade {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
     }
 }

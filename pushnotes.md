@@ -7,3 +7,7 @@
 - Took of slack icon from contact page was unecessary
 - also organized css file
 - fixed some font issues on about page and changed some hover effects
+
+8/15/23 1:24pm
+- Added some keyframes to the h1 and h2 on index.html 
+- also made changes to text for the subtitles on all the pages other than the about page.
