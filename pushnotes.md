@@ -14,3 +14,9 @@
 10:36pm 
 - added a footer with a wave effect at the bottom to test out 
 - changed the h2 animation to translateY and also added media query for padding in between h1 and h2
+
+8/16/23 2pm
+- We got rid of the layered divs and added a copywrite footer in the bottom
+of the about page 
+- Need to still figure out the contact page not being aligned 
+- also needs to figure out how to add the footer properly to every page

@@ -2,7 +2,6 @@
 * { 
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -73,6 +72,7 @@ i{
 .h--li::after {
     content: "";
     position: absolute;
+    padding-top: 1px;
     bottom: -5px; /* Adjust the position of the underline */
     right: 0;
     width: 80%;
@@ -260,27 +260,16 @@ section#hero {
     animation: slideInandFade 2s ease-in 3s forwards ;
 }
 
-.wave {
-    z-index: -1;
+/*Footer*/
+#copyright{
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.wave svg {
-    position: relative;
-    display: block;
-    width: calc(115% + 1.3px);
-    height: 132px;
-}
-
-.wave .shape-fill {
-    fill: #9DB2BF;
-    opacity: .2;
+    height: 2.5rem;  
+    text-align: center;
+    color: slategray;
+    opacity: 0;
+    animation: fadeObject 2s ease-in 3s forwards;
 }
 
 /*WE LEFT OFF HERE!!!!!!!*/
