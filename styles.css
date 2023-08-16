@@ -233,6 +233,7 @@ i{
 
 /*Hero*/
 section#hero {
+    z-index: 1;
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
@@ -245,7 +246,7 @@ section#hero {
 #hero h1{
     font-family: 'Playfair Display', serif;
     font-size: 4.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-weight: 400;
     font-style: italic;
     pointer-events: none;
@@ -259,7 +260,28 @@ section#hero {
     animation: slideInandFade 2s ease-in 3s forwards ;
 }
 
+.wave {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 132px;
+}
+
+.wave .shape-fill {
+    fill: #9DB2BF;
+    opacity: .2;
+}
 
 /*WE LEFT OFF HERE!!!!!!!*/
 .content__style {
@@ -319,9 +341,12 @@ to notice*/
 }
 
 /* Media Queries for Responsive Text */
-@media (min-width: 319px) {
+@media (min-width: 319px) and (max-width: 375px){
     #page_subt{
         font-size: 1.4rem;
+    }
+    #hero h2{
+        margin-top: 2rem;
     }
  
 }
@@ -362,10 +387,10 @@ to notice*/
 @keyframes slideInandFade {
     from{
         opacity: 0;
-        transform: translateX(-100%);
+        transform: translateY(0%);
     }
     to{
-        opacity: 1;
-        transform: translateX(0%);
+        opacity: .5;
+        transform: translateY(-100%);
     }
 }
