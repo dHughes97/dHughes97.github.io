@@ -112,6 +112,7 @@ i{
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
+    margin-top: .2rem;
     border-radius: 20px;
     font-size: 1rem;
     font-weight: bold;
@@ -227,6 +228,24 @@ i{
 }
 
 
+
+/*Background stuff*/
+.background-shapes {
+    position: relative;
+    overflow: hidden;
+}
+
+.random-shape {
+    position: absolute;
+    width: 50px; /* Adjust the size */
+    height: 50px; /* Adjust the size */
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust color and opacity */
+    z-index: -1;
+    opacity: .3;
+    border-radius: 50%; /* Makes shapes circular */
+    animation: fallAnimation ease-in infinite;
+    transition: transform 0.3s ease-out;
+}
 
 
 
@@ -364,6 +383,16 @@ to notice*/
     }
 }
 
+@keyframes fallAnimation {
+    0% {
+        transform: translate(calc(100vw + 100px), -100px); /* Start position */
+    }
+    100% {
+        transform: translate(calc(-100vw - 100px), calc(100vh + 100px)); /* End position */
+    }
+}
+
+
 @keyframes fadeObject {
     0%{
         opacity: 0;
@@ -379,7 +408,7 @@ to notice*/
         transform: translateY(0%);
     }
     to{
-        opacity: .5;
+        opacity: 1;
         transform: translateY(-100%);
     }
 }

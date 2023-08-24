@@ -20,3 +20,10 @@
 of the about page 
 - Need to still figure out the contact page not being aligned 
 - also needs to figure out how to add the footer properly to every page
+
+8/24/23 6:38pm 
+- Added a animation using a keyframe and some javascript to set a random position and amount of circles 
+- Made the keyframe go from top right to bottom left
+- Changed the opacity of the h2 to 1 at the end of the fade 
+- Things to do: Need to get rid of the dots on the contact page, fix typo on the about page, and start working 
+on filling the projects page. 
