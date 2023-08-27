@@ -27,3 +27,10 @@ of the about page
 - Changed the opacity of the h2 to 1 at the end of the fade 
 - Things to do: Need to get rid of the dots on the contact page, fix typo on the about page, and start working 
 on filling the projects page. 
+
+8/27/23 3:26pm 
+- Fixing some typos
+- changing alignment on li's for content_style
+- Added hrefs for anchor tags without them 
+- styled icons slightly
+- Changed structure of hobby page 
