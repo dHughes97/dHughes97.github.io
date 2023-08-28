@@ -244,10 +244,11 @@ i{
     opacity: .3;
     border-radius: 50%; /* Makes shapes circular */
     animation: fallAnimation ease-in infinite;
-    transition: transform 0.3s ease-out;
 }
 
-
+.random-shape:hover{
+    color: orange;
+}
 
 
 /*Hero*/
@@ -409,4 +410,14 @@ section#hero {
         opacity: 1;
         transform: translateY(-100%);
     }
+}
+
+@keyframes hoverAway{
+    from {
+        transform: translate3d(20px,-20px,20px);
+    }
+    to{
+        transform: translate3d(0px,0px,0px);
+    }
+
 }

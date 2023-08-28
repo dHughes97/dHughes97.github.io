@@ -19,23 +19,13 @@ randomShapes.forEach((shape) => {
     // Add falling animation
     shape.style.animationDuration = `${Math.random() * 5 + 5}s`; // Random duration between 5s and 10s
     
-});
+    // //Hover Animation 
+    // shape.addEventListener('mouseenter', () =>{
+    //     shape.style.transform = 'translate3d(10px,10px,10px)';
+    // });
 
-document.addEventListener('mousemove', (e) => {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-
-    randomShapes.forEach((shape) => {
-        const shapeX = parseInt(shape.style.left);
-        const shapeY = parseInt(shape.style.top);
-
-        const distance = Math.sqrt((shapeX - mouseX) ** 2 + (shapeY - mouseY) ** 2);
-
-        // Detect hovering within 5px radius
-        if (distance < 5) {
-            shape.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
-        } else {
-            shape.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
-        }
-    });
+    // //Hover Animation 
+    // shape.addEventListener('mouseleave', () =>{
+    //     shape.style.transform = 'translate3d(0px,0px,0px)';
+    // });
 });
