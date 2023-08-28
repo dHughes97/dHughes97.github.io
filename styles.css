@@ -241,7 +241,7 @@ i{
     height: 50px; /* Adjust the size */
     background-color: rgba(255, 255, 255, 0.5); /* Adjust color and opacity */
     z-index: -1;
-    opacity: .3;
+    opacity: .1;
     border-radius: 50%; /* Makes shapes circular */
     animation: fallAnimation ease-in infinite;
 }
@@ -275,6 +275,32 @@ section#hero {
     pointer-events: none;
     opacity: 0;
     animation: slideInandFade 2s ease-in 3s forwards ;
+}
+
+
+.resume-button{
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    border-radius: 8px;
+    padding: .625rem 1.25rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0;
+    font-weight: 500;
+    animation: slideInandFade 2s ease-in 3s forwards ;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    
+}
+
+.resume-button:hover{
+    background-color: white;
+    color:#0a192f;
+    font-weight: 1000;
 }
 
 /*Footer*/
@@ -408,3 +434,4 @@ section#hero {
         transform: translateY(-100%);
     }
 }
+

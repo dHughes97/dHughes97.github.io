@@ -34,3 +34,6 @@ on filling the projects page.
 - Added hrefs for anchor tags without them 
 - styled icons slightly
 - Changed structure of hobby page 
+10:32pm 
+- added copyright to all pages 
+- added button to download resume, also styled it 
