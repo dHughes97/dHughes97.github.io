@@ -246,9 +246,6 @@ i{
     animation: fallAnimation ease-in infinite;
 }
 
-.random-shape:hover{
-    color: orange;
-}
 
 
 /*Hero*/
@@ -410,14 +407,4 @@ section#hero {
         opacity: 1;
         transform: translateY(-100%);
     }
-}
-
-@keyframes hoverAway{
-    from {
-        transform: translate3d(20px,-20px,20px);
-    }
-    to{
-        transform: translate3d(0px,0px,0px);
-    }
-
 }

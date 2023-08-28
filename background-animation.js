@@ -18,14 +18,5 @@ randomShapes.forEach((shape) => {
 
     // Add falling animation
     shape.style.animationDuration = `${Math.random() * 5 + 5}s`; // Random duration between 5s and 10s
-    
-    // //Hover Animation 
-    // shape.addEventListener('mouseenter', () =>{
-    //     shape.style.transform = 'translate3d(10px,10px,10px)';
-    // });
 
-    // //Hover Animation 
-    // shape.addEventListener('mouseleave', () =>{
-    //     shape.style.transform = 'translate3d(0px,0px,0px)';
-    // });
 });
