@@ -215,6 +215,8 @@ i{
     color: lightslategray;
     display: flex; /* Add display flex */
     flex-direction: column; /* Set flex direction to column */
+    max-height: 90vh; /* Set a maximum height */
+    overflow-y: auto;
 }
 
 #content p {
@@ -233,6 +235,7 @@ i{
 .background-shapes {
     position: relative;
     overflow: hidden;
+    height: calc(100% - 60px);
 }
 
 .random-shape {
@@ -327,7 +330,9 @@ section#hero {
     
 }
 
-
+footer{
+    
+}
 .icon_style{
     font-size: clamp(1rem, 1.4vw, 1.4rem);
 }
@@ -378,7 +383,16 @@ section#hero {
     #hero h2{
         margin-top: 2rem;
     }
- 
+
+}
+
+@media(max-width: 375px){
+    
+    .background-shapes{
+        position: relative;
+        overflow: hidden;
+    }
+    
 }
 
 

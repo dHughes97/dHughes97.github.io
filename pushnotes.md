@@ -37,3 +37,8 @@ on filling the projects page.
 10:32pm 
 - added copyright to all pages 
 - added button to download resume, also styled it 
+
+8/27/23 5pm 
+- Fixed the footer issues and made animation viewable on every page
+- Added a overflow-y to the #content to enable the user to scroll 
+- Also added a kerframe for cross platform use
