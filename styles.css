@@ -284,13 +284,13 @@ section#hero {
 .resume-button{
     background-color: transparent;
     color: white;
-    border: 3px solid white;
+    border: 2.3px solid white;
     border-radius: 8px;
     padding: .625rem 1.25rem;
     margin-top: 4rem;
     text-align: center;
     font-family: "Playfair Display", serif;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
     display: inline-block;
     opacity: 0;
@@ -330,9 +330,7 @@ section#hero {
     
 }
 
-footer{
-    
-}
+
 .icon_style{
     font-size: clamp(1rem, 1.4vw, 1.4rem);
 }
@@ -387,7 +385,9 @@ footer{
 }
 
 @media(max-width: 375px){
-    
+    main{
+        
+    }
     .background-shapes{
         position: relative;
         overflow: hidden;
