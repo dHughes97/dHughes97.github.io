@@ -51,3 +51,5 @@ on filling the projects page.
 - Added the animated tiles to the projects page. 
 - Ajusted the page_subt class bottom-margin to override previous styles and ajust for page
 - Need to add scroll-snap
+1:11pm 
+- Made UX changes for a more fluid user experience 
