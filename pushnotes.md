@@ -46,3 +46,8 @@ on filling the projects page.
 8/31/2023 1:37pm
 - made css changes to resume button and added updated resume
 - changed css for media queries to help with dynamic viewing on different devices
+
+9/1/23 12:50pm
+- Added the animated tiles to the projects page. 
+- Ajusted the page_subt class bottom-margin to override previous styles and ajust for page
+- Need to add scroll-snap
