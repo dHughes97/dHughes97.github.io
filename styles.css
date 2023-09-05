@@ -61,9 +61,10 @@ i{
     font-weight:700;
 }
 
-.navbar .links{
+.navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
+    padding: revert;
 }
 
 .h--li {
@@ -203,7 +204,7 @@ i{
 
 
 
-/* About Div Content */
+/* Site Content CSS */
 #content {
     box-sizing: border-box;
     max-width: 1440px;
@@ -220,6 +221,24 @@ i{
     flex-direction: column; /* Set flex direction to column */
     max-height: 90vh; /* Set a maximum height */
     overflow-y: hidden;
+}
+
+/*About CSS*/
+ .about-b-style{
+    box-sizing: border-box;
+    max-width: 1440px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 6rem 2rem 10rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: lightslategray;
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 #content p {

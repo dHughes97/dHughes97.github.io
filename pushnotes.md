@@ -53,3 +53,9 @@ on filling the projects page.
 - Need to add scroll-snap
 1:11pm 
 - Made UX changes for a more fluid user experience 
+
+9/5/23 2:57pm 
+- Hid the scroll bar across whole site 
+- Added hover effect on the anchor tags on the contact page by 
+adding class a-hv. 
+- Left off trying to overried the content id and use the about-b-style class
