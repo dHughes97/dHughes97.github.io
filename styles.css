@@ -21,6 +21,10 @@ a{
     font-size: 1rem;
 }
 
+.a-hv:hover{
+    color: #fdfd96;
+}
+
 /*Dlogo and its animations/effects*/
 .dLogo {
     width: 6em;
@@ -208,7 +212,6 @@ i{
     justify-content: center;
     text-align: center;
     margin: auto;
-    top: 15vh;
     padding: 6rem 2rem 10rem;
     font-size: 1.3rem;
     font-weight: 600;
@@ -216,7 +219,7 @@ i{
     display: flex; /* Add display flex */
     flex-direction: column; /* Set flex direction to column */
     max-height: 90vh; /* Set a maximum height */
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 #content p {
