@@ -59,3 +59,9 @@ on filling the projects page.
 - Added hover effect on the anchor tags on the contact page by 
 adding class a-hv. 
 - Left off trying to overried the content id and use the about-b-style class
+
+9/6/23 1:00pm 
+- Fixed scrolling and positioning issues in the about 
+page 
+- replaced the #content with a about-b-style and added a p class on top 
+of the about-b-style. 

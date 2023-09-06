@@ -223,6 +223,14 @@ i{
     overflow-y: hidden;
 }
 
+
+#content p {
+    position: inherit;
+    margin-bottom: 2rem;
+    font-size: clamp(1rem, 1.4vw, 1.4rem);
+}
+
+
 /*About CSS*/
  .about-b-style{
     box-sizing: border-box;
@@ -241,7 +249,7 @@ i{
     overflow-y: auto;
 }
 
-#content p {
+.about-b-style p{
     position: inherit;
     margin-bottom: 2rem;
     font-size: clamp(1rem, 1.4vw, 1.4rem);
