@@ -337,9 +337,11 @@ section#hero {
 }
 
 /*Animated Tiles*/
+
 #flex-frame {
     display: flex;
     flex-direction: row;
+    overflow-x: auto;
 }
 .about-ps{
         position: relative;
@@ -439,6 +441,25 @@ section#hero {
   transform:translateX(0);
   opacity:1;
 }
+
+.tile-snap{
+    box-sizing: border-box;
+    max-width: 1440px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 6rem 2rem 10rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: lightslategray;
+    display: flex; /* Add display flex */
+    flex-direction: row; /* Set flex direction to column */
+    max-height: 90vh; /* Set a maximum height */
+    overflow-y: hidden;
+}
+
 
 
 /*Footer*/

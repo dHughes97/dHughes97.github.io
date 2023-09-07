@@ -65,3 +65,7 @@ adding class a-hv.
 page 
 - replaced the #content with a about-b-style and added a p class on top 
 of the about-b-style. 
+
+9/7/23 11:52pm 
+- fixed scrolling issues 
+- was trying to add scroll-snap to the tiles
