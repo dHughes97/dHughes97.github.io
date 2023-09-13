@@ -69,3 +69,6 @@ of the about-b-style.
 9/7/23 11:52pm 
 - fixed scrolling issues 
 - was trying to add scroll-snap to the tiles
+
+9/12/23 9:53am 
+- added -webkit-backdrop-filter to test blur effect on ios 
