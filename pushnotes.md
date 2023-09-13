@@ -72,3 +72,6 @@ of the about-b-style.
 
 9/12/23 9:53am 
 - added -webkit-backdrop-filter to test blur effect on ios 
+
+9/13/2023 2:17pm 
+- Update resume anchor tag document
