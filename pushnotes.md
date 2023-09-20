@@ -75,3 +75,6 @@ of the about-b-style.
 
 9/13/2023 2:17pm 
 - Update resume anchor tag document
+
+9/20/2023 6:47pm 
+- Updated resume document `DeltonHughesResume2023.pdf` to `DeltonHughesResume23.pdf`
