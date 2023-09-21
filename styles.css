@@ -382,7 +382,7 @@ section#hero {
   overflow:hidden;
   color:white;
   font-family:'Roboto';
-  
+  font-size: 1.2rem;
 }
 .tile img
 {

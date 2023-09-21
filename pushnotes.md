@@ -81,3 +81,7 @@ of the about-b-style.
 7:08pm 
 - Added background image to tiles and added text/box shadows for better visibility
 - `.about-ps` updated the `bottom` property to -8vh
+
+9/21/2023 1:33pm 
+- Added anchor tags to the tile divs. 
+- Problem: Needs to work on all devices the padding/margin between each div is being ignored 
