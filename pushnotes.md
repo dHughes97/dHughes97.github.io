@@ -78,3 +78,6 @@ of the about-b-style.
 
 9/20/2023 6:47pm 
 - Updated resume document `DeltonHughesResume2023.pdf` to `DeltonHughesResume23.pdf`
+7:08pm 
+- Added background image to tiles and added text/box shadows for better visibility
+- `.about-ps` updated the `bottom` property to -8vh
