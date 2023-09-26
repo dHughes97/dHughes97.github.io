@@ -85,3 +85,6 @@ of the about-b-style.
 9/21/2023 1:33pm 
 - Added anchor tags to the tile divs. 
 - Problem: Needs to work on all devices the padding/margin between each div is being ignored 
+
+9/26/2023 10:42am 
+- Fixed ios font-style:italic on .resume-button not showing 

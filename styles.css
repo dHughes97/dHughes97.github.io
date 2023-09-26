@@ -321,6 +321,7 @@ section#hero {
     margin-top: 4rem;
     text-align: center;
     font-family: "Playfair Display", serif;
+    font-style: italic;
     font-size: 18px;
     cursor: pointer;
     display: inline-block;
