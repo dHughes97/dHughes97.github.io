@@ -88,3 +88,6 @@ of the about-b-style.
 
 9/26/2023 10:42am 
 - Fixed ios font-style:italic on .resume-button not showing 
+
+10/10/2024 9:40am 
+- Switched the h2 content from `Front End Developer` to `Full Stack Developer` 
