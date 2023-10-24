@@ -247,7 +247,7 @@ i{
     display: flex;
     flex-direction: column;
     max-height: 90vh;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 .about-b-style p{
@@ -523,12 +523,18 @@ section#hero {
     .dropdown_menu{
         display: block;
     }
+    .about-b-style{
+        overflow-y: auto;
+    }
 }
 
 @media(max-width: 576px){
     .dropdown_menu {
         left: 2rem;
         width:unset;
+    }
+    .about-b-style{
+        overflow-y: auto;
     }
 }
 
@@ -540,6 +546,9 @@ section#hero {
     #hero h2{
         margin-top: 2rem;
     }
+    .about-b-style{
+        overflow-y: auto;
+    }
 
 }
 
@@ -548,6 +557,9 @@ section#hero {
     .background-shapes{
         position: relative;
         overflow: hidden;
+    }
+    .about-b-style{
+        overflow-y: auto;
     }
     
 }

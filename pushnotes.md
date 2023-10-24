@@ -91,3 +91,7 @@ of the about-b-style.
 
 10/10/2024 9:40am 
 - Switched the h2 content from `Front End Developer` to `Full Stack Developer` 
+
+10/24/2024 2:41pm
+- Removed overflow on `.about-b-style`
+- Added `overflow-y:hidden;` to media queries. 
