@@ -95,3 +95,8 @@ of the about-b-style.
 10/24/2024 2:41pm
 - Removed overflow on `.about-b-style`
 - Added `overflow-y:hidden;` to media queries. 
+
+11/17/2023 4:17pm 
+- Added forum for email box 
+- Added php logic for sending email
+- Issue: The email did not send when I submitted a test. 
