@@ -100,3 +100,8 @@ of the about-b-style.
 - Added forum for email box 
 - Added php logic for sending email
 - Issue: The email did not send when I submitted a test. 
+
+4:25pm 
+- Fixed some syntax errors which would have been the cause 
+- need to add css to forum 
+- Issue: still not send email to me! 

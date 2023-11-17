@@ -40,9 +40,9 @@
         </header>
         <!-- Foundation for Email Forum -->
         <main class="background-shapes">
-            <div id="forumWrapper"
-                <div class="random-shape"></div>
-                <div class="random-shape"></div>
+        <div class="random-shape"></div>
+        <div class="random-shape"></div>
+            <div id="forumWrapper">
                 <form action="email.php" method="post">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required><br><br>
@@ -56,8 +56,8 @@
                     <input type="submit" value="submit">
                 </form>
              <?php
-                // checks if there is a submission
-                    if($_SERVER["REQUEST_METHOD" == "POST"]){
+                    // checks if there is a submission
+                    if($_SERVER["REQUEST_METHOD"] == "POST"){
                        // we need to retrieve forum data
                         $name = $_POST['name']; 
                         $email = $_POST['email'];
