@@ -105,3 +105,9 @@ of the about-b-style.
 - Fixed some syntax errors which would have been the cause 
 - need to add css to forum 
 - Issue: still not send email to me! 
+
+11/18/2023 1:01pm 
+- Scrapped the php version of making an email forum. Testing other ideas out 
+- Testing out js to create a forum with email 
+- applying css to email form on page. 
+- Need to implement backend for the email form.
