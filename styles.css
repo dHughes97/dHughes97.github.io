@@ -520,6 +520,8 @@ section#hero {
 
 #info{
     margin: .4rem;
+    outline: none;
+    opacity: .5;
 }
 
 

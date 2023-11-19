@@ -46,18 +46,39 @@
             <div class="random-shape"></div>
             <div id="content">
                 <h2 class="page_subt"><span>Send an Email to me!</span></h2>
-            <div id="f-Container">
-                <form class="nr-flex">
-                    <input action="text" id="info" placeholder="Name" required> <br><br>
-                    <input type="email" id="info" placeholder="Email" required></form> <br><br>
-                <form class="m-form">
-                    <textarea type="message" id="info" placeholder="Enter message" cols="50" rows="4"></textarea><br>
-                    <button type="submit" id="send">Send</button>
-                </form>
-            </div>    
+                <div id="f-Container">
+                    <form class="nr-flex" onsubmit="sendEmail(); return false;">
+                        <input id="name" placeholder="Name" required><br><br>
+                        <input type="email" id="email" placeholder="Email" required><br><br>
+                        <textarea id="message" placeholder="Enter message" cols="50" rows="4"></textarea><br>
+                        <button type="submit" id="send">Send</button>
+                    </form>
+                </div>    
             </div>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+                function sendEmail() {
+                    Email.send({
+                        Host: "smtp.gmail.com",
+                        Username: "hughesdelton1@gmail.com",
+                        Password: "Hunterxhunter1",
+                        To: "hughesdelton1@gmail.com",
+                        From: document.getElementById("email").value,
+                        Subject: "New Contact Form Enquiry",
+                        Body:
+                            "Name: " + document.getElementById("name").value +
+                            "<br> Email: " + document.getElementById("email").value +
+                            "<br> Message: " + document.getElementById("message").value
+                    }).then(
+                        message => alert("Message Sent Successfully")
+                    ).catch(
+                        error => console.error(error)
+                    );
+                }
+            </script>
         </main>
         <script src="background-animation.js"></script>
+        
         <script>
             const toggleBtn = document.querySelector('.toggle_btn')
             const toggleBtnIcon = document.querySelector('.toggle_btn i')
