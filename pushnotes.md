@@ -111,3 +111,6 @@ of the about-b-style.
 - Testing out js to create a forum with email 
 - applying css to email form on page. 
 - Need to implement backend for the email form.
+10:02pm 
+- Started backend for website 
+- need to verify domain name with smtp on github pages side for email stuff 
