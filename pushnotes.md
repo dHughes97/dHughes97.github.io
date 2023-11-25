@@ -114,3 +114,5 @@ of the about-b-style.
 10:02pm 
 - Started backend for website 
 - need to verify domain name with smtp on github pages side for email stuff 
+
+11/23/2023 3:39pm 
