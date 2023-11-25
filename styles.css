@@ -513,17 +513,6 @@ section#hero {
    
 }
 
-.m-form{
-   display: flex;
-   flex-direction: column;
-}
-
-#info{
-    margin: .4rem;
-    outline: none;
-    opacity: .5;
-}
-
 
 
 
