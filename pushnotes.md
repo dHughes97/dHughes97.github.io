@@ -115,4 +115,6 @@ of the about-b-style.
 - Started backend for website 
 - need to verify domain name with smtp on github pages side for email stuff 
 
-11/23/2023 3:39pm 
+11/25/2023 5:37pm
+- Fixed anchor tag for email.php for email page on contacts 
+- Implemented temporary form for email on formspree.io 
