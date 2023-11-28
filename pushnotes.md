@@ -118,3 +118,6 @@ of the about-b-style.
 11/25/2023 5:37pm
 - Fixed anchor tag for email.php for email page on contacts 
 - Implemented temporary form for email on formspree.io 
+
+11/28/2023 10:04am 
+- Added styling to email form on webpage 
