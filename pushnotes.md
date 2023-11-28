@@ -122,3 +122,6 @@ of the about-b-style.
 
 11/26/2023 6:06pm
 - may implement twilio for api for sms messages to me. 
+
+11/28/2023 10:04am 
+- Added styling to email form on webpage 
