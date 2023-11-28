@@ -118,3 +118,7 @@ of the about-b-style.
 11/25/2023 5:37pm
 - Fixed anchor tag for email.php for email page on contacts 
 - Implemented temporary form for email on formspree.io 
+
+
+11/26/2023 6:06pm
+- may implement twilio for api for sms messages to me. 
