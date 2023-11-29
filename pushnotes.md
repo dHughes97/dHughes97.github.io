@@ -125,3 +125,7 @@ of the about-b-style.
 
 11/28/2023 10:04am 
 - Added styling to email form on webpage 
+
+11/29/2023 3:15pm
+- fixed opacity on email form 
+- added the action_btn class on the submit but for the form 
