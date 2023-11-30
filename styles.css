@@ -510,6 +510,7 @@ section#hero {
 .nr-flex {
     display: flex;
     flex-direction: column;
+
 }
 
 .i-box{
@@ -562,7 +563,7 @@ section#hero {
         display: block;
     }
     .about-b-style{
-        overflow-y: hidden;
+        overflow-y: auto;
     }
 }
 
@@ -572,7 +573,8 @@ section#hero {
         width:unset;
     }
     .about-b-style{
-        overflow-y: hidden;
+        
+        overflow-y: auto;
     }
 }
 
@@ -585,7 +587,7 @@ section#hero {
         margin-top: 2rem;
     }
     .about-b-style{
-        overflow-y: hidden;
+        overflow-y: auto;
     }
 
 }
@@ -597,7 +599,7 @@ section#hero {
         overflow: hidden;
     }
     .about-b-style{
-        overflow-y: hidden;
+        overflow-y: auto;
     }
     
 }

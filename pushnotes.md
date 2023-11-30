@@ -129,3 +129,6 @@ of the about-b-style.
 11/29/2023 3:15pm
 - fixed opacity on email form 
 - added the action_btn class on the submit but for the form 
+
+11/30/2023 10:27pm 
+- Switching `overflow-y = hidden` to `auto`.
