@@ -135,3 +135,7 @@ of the about-b-style.
 
 1/5/2023 12:42pm 
 - Changed the link for the MSU ACM Project to show the ACM github page
+
+
+3/8/2024 11:37am 
+- Added border radius 15% to tiles to show a better difference between them
