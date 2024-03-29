@@ -247,7 +247,7 @@ i{
     display: flex;
     flex-direction: column;
     max-height: 90vh;
-    /* overflow-y: auto; */
+    overflow-y: scroll;
 }
 
 .about-b-style p{
@@ -259,6 +259,26 @@ i{
 .a__b{
     color: lightgrey; 
 }
+
+.personal_img {
+    border-radius: 100%;
+    width: 12rem;
+}
+
+/* Gets rid of the the scroll bar */
+.about-b-style::-webkit-scrollbar {
+    width: 0px; /* For horizontal scrollbars */
+    height: 0px; /* For vertical scrollbars */
+}
+
+.about-b-style {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+
+
+
 
 
 

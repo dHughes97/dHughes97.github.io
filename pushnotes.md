@@ -139,3 +139,7 @@ of the about-b-style.
 
 3/8/2024 11:37am 
 - Added border radius 15% to tiles to show a better difference between them
+
+3/29/2024 12:56pm
+- Added personal image to about page and added styling 
+- added scroll bar hiding on about page
