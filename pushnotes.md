@@ -143,3 +143,7 @@ of the about-b-style.
 3/29/2024 12:56pm
 - Added personal image to about page and added styling 
 - added scroll bar hiding on about page
+
+
+4/3/2024 8:33pm 
+- Updated projects and their descriptions on the projects.html file. 
