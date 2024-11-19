@@ -99,9 +99,22 @@ i{
     background-color: #fdfd96; /* Change the underline color on hover */
 }
 
+/* Hobby page Styles */
+
+.hobbies-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.hobby-item {
+    padding-right: 10vw;
+}
+
 .about:hover, .hobby:hover, .project:hover {
     color: #fdfd96;
 }
+
+
 
 .navbar .toggle_btn{
     color: #fff;
